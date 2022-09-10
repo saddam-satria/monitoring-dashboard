@@ -12,4 +12,4 @@ services:
       - '9090:9090'
     container_name: prometheus
     volumes:
-      - ./prometheus/config.yaml:/etc/prometheus/prometheus.yml
+      - 'prometheus/config.yml:/etc/prometheus/prometheus.yml'
