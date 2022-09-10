@@ -6,9 +6,6 @@ services:
     ports:
       - '3000:3000'
     container_name: grafana-service
-    volumes:
-      - './grafana/grafana_data:/var/lib/grafana'
-    restart: unless-stopped
   prometheus:
     image: prom/prometheus
     ports:
